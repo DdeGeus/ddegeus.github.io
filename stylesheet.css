@@ -97,8 +97,9 @@ h2 {
 }
 
 li {
-  margin: 10px 0;
+  margin: 5px 10px;
 }
+
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -167,4 +168,14 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+.news-item{
+  margin-top: -14px;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.news-item-li{
+  margin: 0 10px;
 }
