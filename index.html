@@ -182,6 +182,51 @@
           </p>
         </td>
       </tr>
+
+      <!-- Volt -->
+      <tr onmouseout="volt_stop()" onmouseover="volt_start()">
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='volt_image'>
+              <img src='img/volt_output.png' width="180"></div>
+            <img src='img/volt_input.png' width="180">
+          </div>
+          <script type="text/javascript">
+            function volt_start() {
+              document.getElementById('volt_image').style.opacity = "1";
+            }
+
+            function volt_stop() {
+              document.getElementById('volt_image').style.opacity = "0";
+            }
+            volt_stop()
+          </script>
+        </td>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://yilmazkadir.github.io/Volt/">
+            <span class="papertitle">Volume Transformer: Revisiting Vanilla Transformers for 3D Scene Understanding</span>
+          </a>
+          <br>
+          <a href="https://github.com/YilmazKadir/">Kadir Yilmaz</a>*, 
+          <a href="https://adriankruse.github.io/">Adrian Kruse</a>*,
+          <a href="https://www.linkedin.com/in/tristan-hoefer/">Tristan H&ouml;fer</a>,
+          <strong>Daan de Geus</strong>,
+          <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>
+          <br>
+          <em>arXiv</em>, 2026
+      
+          <br>
+          <a href="https://yilmazkadir.github.io/Volt/">Project page</a>
+          /
+          <a href="https://arxiv.org/abs/2604.19609">arXiv</a>
+          /
+          <a href="https://github.com/YilmazKadir/Volt">Code</a>
+          <p></p>
+          <p>
+          A plain Transformer architecture for point clouds can achieve state-of-the-art performance for 3D scene understanding, when properly trained and scaled.
+          </p>
+        </td>
+      </tr>
       
       
       <!-- DITR -->
