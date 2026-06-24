@@ -179,3 +179,13 @@ span.highlight {
 .news-item-li{
   margin: 0 10px;
 }
+
+.news-item-2{
+  margin-top: -14px;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.news-item-li-2{
+  margin: 0 10px;
+}

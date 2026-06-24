@@ -55,27 +55,44 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Upcoming events</h2>
+                <p>
+                  <strong>ECCV 2026:</strong> <a href="https://sites.google.com/utwente.nl/video4real">Workshop on Real-World Video Representation Learning (Video4Real)</a><br />
+                  <ul class="news-item">
+                    <li class="news-item-li"><strong>Date:</strong> September 9, 2026</li>
+                    <li class="news-item-li"><strong>Submission deadline:</strong> July 18, 2026</li>
+                  </ul>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>News</h2>
                 <p>
+                  <strong>[2026/06]</strong> <a href="https://arxiv.org/abs/2606.22124">ATLAS</a> was accepted to MICCAI 2026. <br />
+                  <strong>[2026/06]</strong> Two papers were accepted to ECCV 2026.<br>
+                  <ul class="news-item">
+                    <li class="news-item-li"> <a href="https://yilmazkadir.github.io/Volt/">Volt</a> is a plain Transformer architecture for 3D understanding.</li>
+                    <li class="news-item-li">  More info about the other paper soon.</li>
+                  </ul>
+                  <strong>[2026/06]</strong> I co-organized the <a href="https://thenccv.github.io/2026/">Netherlands Conference on Computer Vision (NCCV)</a>. <br />
                   <strong>[2026/05]</strong> <a href="https://karimknaebel.github.io/surge/">SurGe</a> is a new monocular geometry estimation model with highly accurate local surface geometry. <br />
-                  <strong>[2026/04]</strong> We present <a href="https://yilmazkadir.github.io/Volt/">Volt</a>, a plain Transformer architecture for 3D scene understanding. <br />
-                  <strong>[2026/04]</strong> Our workshop on <i>Real-World Video Representation Learning</i> has been accepted to ECCV 2026.<br>
+                  <strong>[2026/04]</strong> Our workshop on <a href="https://sites.google.com/utwente.nl/video4real">Real-World Video Representation Learning</a> has been accepted to ECCV 2026.<br>
                   <strong>[2026/03]</strong> <a href="https://arxiv.org/abs/2603.25398">PMT</a> has been accepted to the <a href="https://ecv-workshop.github.io/">ECV workshop</a> at CVPR 2026. Code is <a href="https://github.com/tue-mps/pmt">available</a>. <br>
                   <strong>[2026/03]</strong> We have released the code and models for <a href="https://github.com/VisualComputingInstitute/DITR">DITR</a>. <br>
                   <strong>[2026/02]</strong> Two papers were accepted to CVPR 2026.<br>
+                </p>
+                <p>
                   <ul class="news-item">
                     <li class="news-item-li"><a href="https://www.tue-mps.org/videomt/">VidEoMT</a> achieves SOTA video segmentation at 5x-10x speedups.</li>
                     <li class="news-item-li"><a href="https://deltatok.github.io/">DeltaWorld</a> is an efficient world model that uses <i>delta tolkens</i>.</li>
                   </ul>
-                  <strong>[2026/01]</strong> I became an <a href="https://ellis.eu/person/daan-de-geus">ELLIS member</a>. <br>
-                  <strong>[2025/11]</strong> <a href="https://visualcomputinginstitute.github.io/DITR/">DITR</a> has been accepted to 3DV 2026. <br>
-                  <strong>[2025/10]</strong> Honored to be selected as a <a href="https://neurips.cc/Conferences/2025/ProgramCommittee#top-reviewer">top reviewer</a> for NeurIPS 2025.<br> 
-                  <strong>[2025/09]</strong> We have released the code and models for <a href="https://github.com/MKnoche/DONUT">DONUT</a>. <br> 
-                  <strong>[2025/09]</strong> <a href="https://arxiv.org/abs/2509.19082">Sa2VA-i</a> has achieved the 3rd place on the <a href="https://lsvos.github.io/">ICCV 2025 RVOS Challenge</a>. Code and models are <a href="https://github.com/kumuji/sa2va-i">available</a>.<br>
-                  <strong>[2025/07]</strong> I started as an assistant professor at the <a href="https://www.tue.nl/en/research/research-groups/signal-processing-systems/mobile-perception-systems-lab">MPS Lab</a> of TU/e.<br>
-                  <strong>[2025/06]</strong> <a href="https://mknoche.github.io/DONUT/">DONUT</a> has been accepted to ICCV 2025. <br>
-                  <strong>[2025/05]</strong> We have won the <a href="https://kaldir.vc.in.tum.de/scannetpp/cvpr2025">CVPR 2025 ScanNet++ Challenge</a> with <a href="https://visualcomputinginstitute.github.io/DITR/">DITR</a>. <br>
-                  <strong>[2025/03]</strong> <a href="https://github.com/tue-mps/eomt">EoMT</a> has been accepted to CVPR 2025. <br>
+                </p>
+                <p>
+                  See <a href="news/">older 'news'</a>.
                 </p>
               </td>
             </tr>
@@ -94,6 +111,56 @@
     
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       
+
+
+       <!-- Volt -->
+      <tr onmouseout="volt_stop()" onmouseover="volt_start()">
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='volt_image'>
+              <img src='img/volt_output.png' width="180"></div>
+            <img src='img/volt_input.png' width="180">
+          </div>
+          <script type="text/javascript">
+            function volt_start() {
+              document.getElementById('volt_image').style.opacity = "1";
+            }
+
+            function volt_stop() {
+              document.getElementById('volt_image').style.opacity = "0";
+            }
+            volt_stop()
+          </script>
+        </td>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://yilmazkadir.github.io/Volt/">
+            <span class="papertitle">Volume Transformer: Revisiting Vanilla Transformers for 3D Scene Understanding</span>
+          </a>
+          <br>
+          <a href="https://github.com/YilmazKadir/">Kadir Yilmaz</a>*, 
+          <a href="https://adriankruse.github.io/">Adrian Kruse</a>*,
+          <a href="https://www.linkedin.com/in/tristan-hoefer/">Tristan H&ouml;fer</a>,
+          <strong>Daan de Geus</strong>,
+          <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>
+          <br>
+          <em>ECCV</em>, 2026
+      
+          <br>
+          <a href="https://yilmazkadir.github.io/Volt/">Project page</a>
+          /
+          <a href="https://arxiv.org/abs/2604.19609">arXiv</a>
+          /
+          <a href="https://github.com/YilmazKadir/Volt">Code</a>
+          <p></p>
+          <p>
+          A plain Transformer architecture for point clouds can achieve state-of-the-art performance for 3D scene understanding, when properly trained and scaled.
+          </p>
+        </td>
+      </tr>
+
+
+
+
       <!-- DeltaWorld -->
       <tr>
         <td style="padding:16px;width:20%;vertical-align:middle">
@@ -184,50 +251,7 @@
         </td>
       </tr>
 
-      <!-- Volt -->
-      <tr onmouseout="volt_stop()" onmouseover="volt_start()">
-        <td style="padding:16px;width:20%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='volt_image'>
-              <img src='img/volt_output.png' width="180"></div>
-            <img src='img/volt_input.png' width="180">
-          </div>
-          <script type="text/javascript">
-            function volt_start() {
-              document.getElementById('volt_image').style.opacity = "1";
-            }
-
-            function volt_stop() {
-              document.getElementById('volt_image').style.opacity = "0";
-            }
-            volt_stop()
-          </script>
-        </td>
-        <td style="padding:8px;width:80%;vertical-align:middle">
-          <a href="https://yilmazkadir.github.io/Volt/">
-            <span class="papertitle">Volume Transformer: Revisiting Vanilla Transformers for 3D Scene Understanding</span>
-          </a>
-          <br>
-          <a href="https://github.com/YilmazKadir/">Kadir Yilmaz</a>*, 
-          <a href="https://adriankruse.github.io/">Adrian Kruse</a>*,
-          <a href="https://www.linkedin.com/in/tristan-hoefer/">Tristan H&ouml;fer</a>,
-          <strong>Daan de Geus</strong>,
-          <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>
-          <br>
-          <em>arXiv</em>, 2026
-      
-          <br>
-          <a href="https://yilmazkadir.github.io/Volt/">Project page</a>
-          /
-          <a href="https://arxiv.org/abs/2604.19609">arXiv</a>
-          /
-          <a href="https://github.com/YilmazKadir/Volt">Code</a>
-          <p></p>
-          <p>
-          A plain Transformer architecture for point clouds can achieve state-of-the-art performance for 3D scene understanding, when properly trained and scaled.
-          </p>
-        </td>
-      </tr>
+  
       
       
       <!-- DITR -->
