@@ -74,6 +74,8 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>News</h2>
                 <p>
+                  <strong>[2026/09]</strong> <a href="https://karimknaebel.github.io/surge/">SurGe</a> has been accepted to NeurIPS 2026. <br />
+                  <strong>[2026/09]</strong> I co-organized the workshop on <a href="https://sites.google.com/utwente.nl/video4real">Real-World Video Representation Learning (Video4Real)</a> at ECCV 2026.<br />
                   <strong>[2026/08]</strong> <a href="https://yilmazkadir.github.io/Volt/">Volt</a> has been accepted for oral presentation at ECCV 2026.<br />
                   <strong>[2026/07]</strong> Honored to be selected as an <a href="https://eccv.ecva.net/Conferences/2026/ProgramCommittee#outstanding-reviewer">outstanding reviewer</a> for ECCV 2026.<br>
                   <strong>[2026/06]</strong> <a href="https://arxiv.org/abs/2606.22124">ATLAS</a> was accepted to MICCAI 2026. <br />
@@ -84,7 +86,6 @@
                   </ul>
                   <strong>[2026/06]</strong> I co-organized the <a href="https://thenccv.github.io/2026/">Netherlands Conference on Computer Vision (NCCV)</a>. <br />
                   <strong>[2026/05]</strong> <a href="https://karimknaebel.github.io/surge/">SurGe</a> is a new monocular geometry estimation model with highly accurate local surface geometry. <br />
-                  <strong>[2026/04]</strong> Our workshop on <a href="https://sites.google.com/utwente.nl/video4real">Real-World Video Representation Learning</a> has been accepted to ECCV 2026.<br>
                   <strong>[2026/03]</strong> <a href="https://arxiv.org/abs/2603.25398">PMT</a> has been accepted to the <a href="https://ecv-workshop.github.io/">ECV workshop</a> at CVPR 2026. Code is <a href="https://github.com/tue-mps/pmt">available</a>. <br>
                   <strong>[2026/03]</strong> We have released the code and models for <a href="https://github.com/VisualComputingInstitute/DITR">DITR</a>. <br>
                   <strong>[2026/02]</strong> Two papers were accepted to CVPR 2026.<br>
@@ -115,6 +116,56 @@
     
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       
+
+
+       <!-- SurGe -->
+      <tr onmouseout="surge_stop()" onmouseover="surge_start()">
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='surge_image'>
+              <img src='img/surge_after.jpg' width="180"></div>
+            <img src='img/surge_before.jpg' width="180">
+          </div>
+          <script type="text/javascript">
+            function surge_start() {
+              document.getElementById('surge_image').style.opacity = "1";
+            }
+
+            function surge_stop() {
+              document.getElementById('surge_image').style.opacity = "0";
+            }
+            surge_stop()
+          </script>
+        </td>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://karimknaebel.github.io/surge/">
+            <span class="papertitle">SurGe: Improved Surface Geometry in Point Maps</span>
+          </a>
+          <br>
+          <a href="https://karimknaebel.com/">Karim Knaebel</a>,
+          <a href="https://gonzalomartingarcia.com/">Gonzalo Martin Garcia</a>,
+          <a href="https://github.com/Schmiddo">Christian Schmidt</a>,
+          <a href="https://www.vision.rwth-aachen.de/person/309/">Ilya Fradlin</a>,
+          <a href="https://nuneslu.github.io/">Lucas Nunes</a>,
+          <strong>Daan de Geus</strong>,
+          <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>
+          <br>
+          <em>NeurIPS</em>, 2026
+
+          <br>
+          <a href="https://karimknaebel.github.io/surge/">Project page</a>
+          /
+          <a href="https://arxiv.org/abs/2605.31577">arXiv</a>
+          /
+          <a href="https://github.com/karimknaebel/surge">Code</a>
+          <p></p>
+          <p>
+          SurGe improves the local surface geometry of monocular point map estimation models.
+          </p>
+        </td>
+      </tr>
+
+
 
 
        <!-- Volt -->
@@ -182,7 +233,6 @@
           <a href="https://tacju.github.io/">Ju He</a>, 
           <a href="https://yucornetto.github.io/">Qihang Yu</a>, 
           <a href="https://wufeim.github.io/">Wufei Ma</a>, 
-          <br>
           <strong>Daan de Geus</strong>,
           <a href="https://www.tue.nl/en/research/researchers/gijs-dubbelman">Gijs Dubbelman</a>,
           <a href="http://liangchiehchen.com/">Liang-Chieh Chen</a>
@@ -235,7 +285,7 @@
           <a href="https://scholar.google.com/citations?user=q7sm490AAAAJ">Narges Norouzi</a>,
           <a href="https://scholar.google.com/citations?user=89vcmSoAAAAJ">Idil Esen Zulfikar</a>,
           <a href="https://scholar.google.com/citations?user=Pr4XHRAAAAAJ">Niccol&ograve; Cavagnero</a>, 
-          <a href="https://tommiekerssies.com/">Tommie Kerssies</a>, <br>
+          <a href="https://tommiekerssies.com/">Tommie Kerssies</a>,
           <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>, 
           <a href="https://www.tue.nl/en/research/researchers/gijs-dubbelman">Gijs Dubbelman</a>,
           <strong>Daan de Geus</strong>
@@ -273,7 +323,7 @@
           <a href="https://karimknaebel.com/">Karim Knaebel</a>*,
           <a href="https://github.com/YilmazKadir/">Kadir Yilmaz</a>*, 
           <strong>Daan de Geus</strong>,
-          <a href="https://scholar.google.com/citations?user=V0iMeYsAAAAJ">Alexander Hermans</a>, <br>
+          <a href="https://scholar.google.com/citations?user=V0iMeYsAAAAJ">Alexander Hermans</a>,
           <a href="https://scholar.google.com/citations?user=vpn6QN0AAAAJ">David Adrian</a>,
           <a href="https://scholar.google.com/citations?user=s3_VpQYAAAAJ">Timm Linder</a>,
           <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>
@@ -344,7 +394,7 @@
           <a href="https://tommiekerssies.com/">Tommie Kerssies</a>,
           <a href="https://scholar.google.com/citations?user=Pr4XHRAAAAAJ">Niccol&ograve; Cavagnero</a>, 
           <a href="https://scholar.google.de/citations?user=V0iMeYsAAAAJ">Alexander Hermans</a>,
-          <a href="https://scholar.google.com/citations?user=q7sm490AAAAJ">Narges Norouzi</a>, <br>
+          <a href="https://scholar.google.com/citations?user=q7sm490AAAAJ">Narges Norouzi</a>,
           <a href="https://www.giuseppeaverta.me/">Giuseppe Averta</a>,
           <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>, 
           <a href="https://www.tue.nl/en/research/researchers/gijs-dubbelman">Gijs Dubbelman</a>,
@@ -392,10 +442,10 @@
             <span class="papertitle">Fine-Tuning Image-Conditional Diffusion Models is Easier than You Think</span>
           </a>
           <br>
-          <a href="https://huggingface.co/GonzaloMG">Gonzalo Martin Garcia</a>*, 
+          <a href="https://gonzalomartingarcia.com/">Gonzalo Martin Garcia</a>*, 
           <a href="https://karimknaebel.com/">Karim Abou Zeid</a>*,
           <a href="https://github.com/Schmiddo">Christian Schmidt</a>*, 
-          <strong>Daan de Geus</strong>, <br>
+          <strong>Daan de Geus</strong>,
           <a href="https://scholar.google.com/citations?user=V0iMeYsAAAAJ">Alexander Hermans</a>,
           <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>
           <br>
